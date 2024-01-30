@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HANGMAN </title>
+        <link rel="stylesheet" href="/assets/css/game.css">
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    </head>
+    
+    <body>
+        <div class="corps">
+            <div class="txt">
+                <div class="cbgdh1">
+                    <div class="bgdh1">
+                        <h1>Let's play, {{  .Pseudo  }} !</h1>
+                    </div>
+                </div>
+                    <div class="life">
+                        <a>Remaining attempts : {{   .Vie  }}</a>
+                    </div>
+                    <div class="entry">
+                        <form action="/jouer" method="POST" autocomplete="off">
+                            <input type="text" class="entry" name="entry" autofocus="">
+                            <div class="buttons">
+                                <div class="btn">
+                                    <input class="button-send" type="submit" value="Submit">
+                                </div>
+                        </form>
+                                <form action="/" method="POST" autocomplete="off">
+                                    <div class="btn">
+                                        <button class="button-send">Homepage</button>
+                                    </div>
+                                </form>
+                            </div>
+                    </div>
+            </div>
+            <div class="hangman">
+                <img src="./assets/images/hangman{{  .Vie  }}.png">
+            </div>
+        </div>
+        <div class="choice">
+            <div class="word">
+                <div class="message">
+                    <h4>{{  .Message  }}</h4>
+                </div>
+                <div class="complete"></div>
+                    <div class="whidden">
+                        <h2>{{  .Wordc  }}</h2>
+                    </div>
+                    <div class="letters">
+                        <h3>{{  .Tabletters  }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+

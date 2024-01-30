@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Game Over</title>
+        <link rel="stylesheet" href="/assets/css/echec.css">
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    </head>
+    <body>
+        <div class="texte">
+             <h1>YOU LOST</h1>
+                <p>The word was <b>{{  .Word  }}</b></p>
+                <p>Try harder next time !</p>
+        </div>
+        <div class="button">
+            <div class="button-retour">
+                <form action="/" method="POST" autocomplete="off">  
+                    <input class="button-send" type="submit" value="Back to homepage">
+                </form>
+            </div>
+            <div class="button-score">
+                <form action="/scoreboard" method="POST" autocomplete="off"> 
+                    <input class="button-send" type="submit" value="Scoreboard">
+                </form>
+            </div>
+        </div>
+            <img src="/assets/images/hangman0.png">
+        </div>
+    </body>

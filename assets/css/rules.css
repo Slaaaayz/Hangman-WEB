@@ -1,0 +1,156 @@
+body {
+    background-color: #393646;
+    font-family: -apple-system, Georgia, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #F4EEE0;
+}
+
+
+.cbgdh1{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.bgdh1{
+    width: 40%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    border-radius: 10em;
+    background-color: #F4EEE0;
+    justify-content: center;
+    margin-bottom: 3%;
+    height: 100px;
+    border-style: none;
+    box-shadow: #967E76 0px 10px 6px;
+    box-sizing: border-box;
+    color: #000000;
+    margin-top: 2%;
+}
+
+h1 {
+    color: #2c2a36;
+    font-size: 50px;
+    text-align: center;
+    text-shadow: 2px 2px 2px #967E76;
+}
+
+.rules {
+    color: #F4EEE0;
+    font-size: 2vw;
+}
+
+.title {
+    background-color: #2c2a36;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+}
+
+p {
+    position: relative;
+    color: #F4EEE0;
+    font-size: 20px ;
+    font-family: Georgia;
+    font-weight: 800;
+    text-align: center;
+    line-height: 60px;
+}
+.centerP {
+    margin-top: 30px;
+}
+pa{
+    color : #F4EEE0;
+    justify-content: center;
+    font-size: 20px;
+    font-family: Georgia;
+    margin-left: 2.5%;
+}
+
+.cending{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.ending{
+    width: 25%;
+    position: relative;
+    align-items: center;
+    display: flex;
+    border-radius: 10em;
+    background-color: #2c2a36;
+    height: 60px;
+    justify-content: center;
+}
+
+.button-play {
+    appearance: none;
+    background-color: #F4EEE0;
+    border-radius: 40em;
+    border-style: none;
+    box-shadow: #967E76 0 -12px 6px inset;
+    box-sizing: border-box;
+    color: #000000;
+    font-family: -apple-system, Georgia;
+    cursor: pointer;
+    margin: 15px auto;
+    padding: 1rem 1.3rem;
+    display: block;
+    font-size: 1.5vw;
+    font-weight: 700;
+    letter-spacing: -.24px;
+    outline: none;
+    quotes: auto;
+    text-align: center;
+    text-decoration: none;
+    transition: all .15s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-play:hover {
+    background-color: #F4EEE0;
+    box-shadow: #967E76 0 -6px 8px inset;
+    transform: scale(1.125);
+    color: #000000;
+}
+
+.button-play:active {
+    transform: scale(1.025);
+}
+
+.btnretour {
+    text-align: center;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+li {
+    margin-bottom: 10px;
+    font-family: Georgia;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+    h1 {
+        font-size: 6vw;
+    }
+
+    .rules {
+        font-size: 3vw;
+    }
+
+    .button-play {
+        font-size: 3vw;
+    }
+}

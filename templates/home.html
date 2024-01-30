@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Hangman-web</title>
+        <link rel="stylesheet" href="/assets/css/home.css">
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    </head>
+
+    <body>
+        <div class="cbgdh1">
+            <div class="bgdh1">
+                <h1>H_NGM_N</h1>
+            </div>
+        </div>
+        <form action="/recreate" method="POST" autocomplete="off">
+            <br>
+            <div class="pseudo">
+                <a> Username : </a>
+            </div>
+            <br>
+            <div class="entry">
+                <input type="text" id="pseudo" name="pseudo" maxlength="20" required>
+            </div>
+            <div class="custom-select" style="width: 10%;">
+                <select name="level" class="select">
+                    <option class="option1" selected value="words.txt">Easy</option>
+                    <option class="option2" selected value="words2.txt">Medium</option>
+                    <option class="option3" selected value="words3.txt">Hard</option>
+                </select>
+            </div>
+        </div>
+        <div class="buttons" >
+            <div class="btn">
+                <input class="button-play" type="submit" value="Play">
+            </div>
+        </form>
+            <div class="btn">
+            <form action="/scoreboard" method="POST"> 
+                <input class="button-play" type="submit" value="Scoreboard">
+            </form>
+            </div>
+            <div class="btn">
+                <form action="/rules" method="POST"> 
+                    <input class="button-play" type="submit" value="Rules">
+                </form>
+            </div>
+        </div>
+        <footer>
+            <p>© Luna COLOMBAN-FERNANDEZ - Maxime CHORT - Diane SAUTEREAU</p>
+          </footer>
+    </body>
+</html>

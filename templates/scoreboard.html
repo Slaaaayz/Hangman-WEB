@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>  
+<html>      
+    <head>
+        <title>Scoreboard</title>
+        <link rel="stylesheet" href="/assets/css/scoreboard.css">
+        <link rel="icon" type="image/x-icon" href="/assets/images/favicon.ico">
+    </head>
+    <header>
+        <div class="cbgdh1">
+            <div class="bgdh1">
+                <h1>Scoreboard</h1>
+            </div>
+        </div>
+    </header>
+        <body>
+            <div classe="merge">
+                <div class="container">
+                    {{range .}} 
+                    <table class="scoreboard">
+                        <thead>
+                            <tr>
+                                <th>Player</th>
+                                <th>Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {{range $i, $e := .}}
+                                {{if lt $i 6}}
+                                <tr>
+                                    <td>{{.Name}}</td>
+                                    <td>{{.Score}}</td>
+                                </tr>
+                                {{end}}
+                            {{end}}
+                        </tbody>
+                    </table>
+                    {{end}}
+                </div>
+                <div class="button-retour">
+                    <form action="/" method="POST" autocomplete="off">  
+                        <input class="button-send" type="submit" value="Homepage">
+                    </form>
+                </div>
+            </div>
+        </body>
+        
+        </html>
+        
